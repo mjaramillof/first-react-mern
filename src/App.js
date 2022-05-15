@@ -1,23 +1,26 @@
 import './App.css';
 import PersonCard from './components/PersonCard';
+import PersonCard2 from './components/PersonCard2';
 
-function App() {
+function App(){
   return (
     <div className="App">
-      <h1><span><PersonCard lastName = {"Doe"}/>, <PersonCard firstName = {"Jane"}/></span> </h1>
-      <span>Age: <PersonCard age={45}/></span>
-      <span>Hair Color: <PersonCard hairColor = {"Black"}/></span>
-      <h1><span><PersonCard lastName = {"Smith"}/>, <PersonCard firstName = {"John"}/></span> </h1>
-      <span>Age: <PersonCard age={88}/></span>
-      <span>Hair Color: <PersonCard hairColor = {"Brown"}/></span>
-      <h1><span><PersonCard lastName = {"Fillmore"}/>, <PersonCard firstName = {"Millard"}/></span> </h1>
-      <span>Age: <PersonCard age={50}/></span>
-      <span>Hair Color: <PersonCard hairColor = {"Brown"}/></span>
-      <h1><span><PersonCard lastName = {"Smith"}/>, <PersonCard firstName = {"Maria"}/></span> </h1>
-      <span>Age: <PersonCard age={45}/></span>
-      <span>Hair Color: <PersonCard hairColor = {"Brown"}/></span>
+      <PersonCard2 firstName = {'John'} lastName = {'Doe'} age = {30} hairColor = {'Brown'} addaAge/>
+      <PersonCard2 firstName = {'Amadeus'} lastName = {'Mozart'} age = {80} hairColor = {'Grey'} addAge/>
     </div>
   ); 
 }
-
 export default App;
+
+//Another way to define de function using arrow notation
+
+/* const App = () => {
+  return(
+    <div className='App'>
+      <PersonCard firstName = {'John'} lastName = {'Doe'} age = {30} hairColor = {'Brown'}/>
+      <PersonCard2 firstName = {'Amadeus'} lastName = {'Mozart'} age = {230} hairColor = {'Grey'}/>
+    </div>
+  );
+}
+export default App;
+ */
