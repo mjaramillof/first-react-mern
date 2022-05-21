@@ -5,8 +5,6 @@ import React, { Component } from "react";
 class PersonCard extends Component{
     render(){
         
-    
-        
         return(
         <>
             <h1>{this.props.lastName}, {this.props.firstName}</h1>
